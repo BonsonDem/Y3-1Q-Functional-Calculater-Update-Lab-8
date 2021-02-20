@@ -23,6 +23,7 @@ let box2 = {
         let es6 = () => {
             boxDiv2.innerHTML = "arrow functions does not have their own \"this\" || " + this.color + " * value is using this keyword "
         }
+        
 
         es6()
     }
