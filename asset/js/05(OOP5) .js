@@ -10,10 +10,10 @@ class Person_ES6 {
 }
 
 //1. Make Customer class to extend from Person_ES6
-class Customer_ES6 {
+class Customer_ES6 extends Person_ES6 {
 
     constructor(fName, lName) {
-
+        super(fName,lName)
         //2. Call the super class [super(fName,lName)]
 
     }
@@ -21,6 +21,6 @@ class Customer_ES6 {
 
 //3. Create Customer ["Jeor", "Mormont"]
 
-
+const cu = new Customer_ES6("Jeor","Mormont")
 //4. Display the greeting on Jeor Customer Object [remove the string when you have the object]
-es6_proto.innerHTML = "cu.greeting()";
+es6_proto.innerHTML = cu.greeting();
